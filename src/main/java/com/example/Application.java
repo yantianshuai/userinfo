@@ -21,7 +21,7 @@ public class Application {
 
 	public static void main(String[] args) throws Exception {
 //		String s = HttpClientUtil.httpsGet("https://tianjinfc-t.9h-sports.com/wallpaperinfo/picture-mark/40");
-		
+
 		String s = HttpClientUtil.httpGet("https://tianjinfc-t.9h-sports.com/wallpaperinfo/picture-mark/40");
 		System.out.println(s);
 		HashMap param = new HashMap();
