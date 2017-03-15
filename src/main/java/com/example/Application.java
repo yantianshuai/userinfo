@@ -6,6 +6,7 @@ import com.example.util.HttpClientUtil;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.utils.HttpClientUtils;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.springframework.boot.SpringApplication;
@@ -19,8 +20,9 @@ import java.util.HashMap;
 public class Application {
 
 	public static void main(String[] args) throws Exception {
-		String s = HttpClientUtil.httpsGet("https://tianjinfc-t.9h-sports.com/wallpaperinfo/picture-mark/40");
-//		String s = HttpClientUtil.httpGet("https://tianjinfc-t.9h-sports.com/wallpaperinfo/picture-mark/40");
+//		String s = HttpClientUtil.httpsGet("https://tianjinfc-t.9h-sports.com/wallpaperinfo/picture-mark/40");
+		
+		String s = HttpClientUtil.httpGet("https://tianjinfc-t.9h-sports.com/wallpaperinfo/picture-mark/40");
 		System.out.println(s);
 		HashMap param = new HashMap();
 		String jsonString = JSON.toJSONString(param);
