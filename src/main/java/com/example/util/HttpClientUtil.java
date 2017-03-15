@@ -42,7 +42,6 @@ import java.util.List;
  * Created by Administrator on 2017/3/2.
  */
 public class HttpClientUtil extends DefaultHttpClient{
-    String a = "tes";
     public static String httpGet(String url){
         CloseableHttpClient httpclient = HttpClients.createDefault();
         HttpGet httpGet = new HttpGet(url);
